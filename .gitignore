@@ -1,0 +1,3 @@
+# Complaint evidence belongs to the local installation.
+/uploads/complaints/*
+!/uploads/complaints/.htaccess

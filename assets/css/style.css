@@ -1,0 +1,533 @@
+
+/* =================================
+   GENERAL SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6fa;
+    color: #263238;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =================================
+   NAVIGATION BAR
+================================= */
+
+.navbar {
+    background-color: #142b4a;
+    color: white;
+    padding: 16px 0;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #8fc8ff;
+}
+
+.nav-button {
+    background-color: #2878c7;
+    padding: 9px 15px;
+    border-radius: 6px;
+}
+
+.nav-button:hover {
+    background-color: #1d5f9f;
+    color: white !important;
+}
+
+/* =================================
+   MAIN CONTENT
+================================= */
+
+main.container {
+    flex: 1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* =================================
+   HOMEPAGE HERO SECTION
+================================= */
+
+.hero {
+    background-color: white;
+    border-radius: 12px;
+    padding: 65px 30px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #142b4a;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    color: #5f6b78;
+    font-size: 17px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* =================================
+   BUTTONS
+================================= */
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-primary {
+    background-color: #2878c7;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1d5f9f;
+}
+
+.btn-secondary {
+    background-color: #e5eaf0;
+    color: #142b4a;
+}
+
+.btn-secondary:hover {
+    background-color: #d1dbe6;
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+.footer {
+    background-color: #142b4a;
+    color: white;
+    text-align: center;
+    padding: 22px 10px;
+    margin-top: auto;
+}
+
+.footer p {
+    font-size: 13px;
+    margin: 4px 0;
+}
+
+/* =================================
+   MOBILE RESPONSIVENESS
+================================= */
+
+@media (max-width: 600px) {
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 40px 18px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+}
+
+/* =================================
+   STUDENT REGISTRATION FORM
+================================= */
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.form-container h1 {
+    color: #142b4a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-description {
+    text-align: center;
+    color: #5f6b78;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #263238;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd4df;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2878c7;
+    box-shadow: 0 0 4px rgba(40, 120, 199, 0.3);
+}
+
+.form-container button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.message {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    background-color: #ffe8e8;
+    color: #b42318;
+}
+
+.success-message {
+    background-color: #e5f7e9;
+    color: #18743a;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a,
+.success-message a {
+    color: #2878c7;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 22px 18px;
+    }
+}
+
+/* =================================
+   STUDENT DASHBOARD
+================================= */
+
+.dashboard-info {
+    margin-top: 30px;
+}
+
+.dashboard-info h2 {
+    color: #142b4a;
+    margin-bottom: 18px;
+}
+
+.info-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.info-card p {
+    padding: 12px 0;
+    border-bottom: 1px solid #e5eaf0;
+}
+
+.info-card p:last-child {
+    border-bottom: none;
+}
+
+/* =================================
+   COMPLAINT SUBMISSION FORM
+================================= */
+
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd4df;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.form-group textarea {
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2878c7;
+}
+
+.form-group small {
+    display: block;
+    color: #687586;
+    margin-top: 6px;
+}
+
+/* =================================
+   MY COMPLAINTS PAGE
+================================= */
+
+.complaints-section h1 {
+    color: #142b4a;
+    margin-bottom: 8px;
+}
+
+.complaints-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.complaints-heading p {
+    color: #5f6b78;
+}
+
+.complaints-table-wrapper {
+    overflow-x: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+.complaints-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+.complaints-table th,
+.complaints-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e5eaf0;
+}
+
+.complaints-table th {
+    background-color: #142b4a;
+    color: white;
+}
+
+.complaints-table tbody tr:hover {
+    background-color: #f4f6fa;
+}
+
+.priority-badge,
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.priority-low {
+    background: #e5f7e9;
+    color: #18743a;
+}
+
+.priority-medium {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.priority-high {
+    background: #ffe8e8;
+    color: #b42318;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-in_progress {
+    background: #dceeff;
+    color: #175b99;
+}
+
+.status-resolved {
+    background: #e5f7e9;
+    color: #18743a;
+}
+
+.status-rejected {
+    background: #ffe8e8;
+    color: #b42318;
+}
+
+.empty-state {
+    background: white;
+    padding: 45px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+.empty-state h2 {
+    color: #142b4a;
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    color: #5f6b78;
+    margin-bottom: 20px;
+}
+
+.complaint-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    overflow-wrap: anywhere;
+}
+
+.complaint-detail h1,
+.complaint-detail h2 {
+    color: #142b4a;
+    margin-bottom: 10px;
+}
+
+.complaint-detail ul,
+.complaint-history {
+    padding-left: 22px;
+}
+
+.complaint-history li + li {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e5eaf0;
+}
+
+/* =================================
+   DASHBOARD ACTION CARDS
+================================= */
+
+.dashboard-actions {
+    margin-top: 30px;
+}
+
+.dashboard-actions h2 {
+    color: #142b4a;
+    margin-bottom: 18px;
+}
+
+.action-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.action-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+.action-card h3 {
+    color: #142b4a;
+    margin-bottom: 10px;
+}
+
+.action-card p {
+    color: #5f6b78;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+    .action-cards {
+        grid-template-columns: 1fr;
+    }
+}
